@@ -70,7 +70,7 @@ func buttonEq_1() {
     
     //  Image(systemName: "circle.fill")
        // .scaleEffect(0.7)
-        //    .foregroundColor(.yellow)
+        //    .foregroundColor(.yellow) dfd
         
 }
 
