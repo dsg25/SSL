@@ -13,17 +13,23 @@
 		4070547429484CBE00FF5E86 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4070547329484CBE00FF5E86 /* Assets.xcassets */; };
 		4070547729484CBE00FF5E86 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4070547629484CBE00FF5E86 /* Preview Assets.xcassets */; };
 		4070547A29484CBE00FF5E86 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4070547829484CBE00FF5E86 /* LaunchScreen.storyboard */; };
+		4070548429484DF200FF5E86 /* EQView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4070548329484DF200FF5E86 /* EQView.swift */; };
+		407054862948585100FF5E86 /* CompView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 407054852948585100FF5E86 /* CompView.swift */; };
+		407054882948586600FF5E86 /* BusCompView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 407054872948586600FF5E86 /* BusCompView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		4070546A29484CB200FF5E86 /* SSL.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SSL.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4070546D29484CB200FF5E86 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4070546F29484CB200FF5E86 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		4070547129484CB200FF5E86 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		4070547129484CB200FF5E86 /* ContentView.swift */ = {isa = PBXFileReference; indentWidth = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; tabWidth = 4; usesTabs = 0; };
 		4070547329484CBE00FF5E86 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4070547629484CBE00FF5E86 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		4070547929484CBE00FF5E86 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4070547B29484CBE00FF5E86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4070548329484DF200FF5E86 /* EQView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EQView.swift; sourceTree = "<group>"; };
+		407054852948585100FF5E86 /* CompView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompView.swift; sourceTree = "<group>"; };
+		407054872948586600FF5E86 /* BusCompView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusCompView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +64,7 @@
 			children = (
 				4070546D29484CB200FF5E86 /* AppDelegate.swift */,
 				4070546F29484CB200FF5E86 /* SceneDelegate.swift */,
-				4070547129484CB200FF5E86 /* ContentView.swift */,
+				4070548229484D8700FF5E86 /* Views */,
 				4070547329484CBE00FF5E86 /* Assets.xcassets */,
 				4070547829484CBE00FF5E86 /* LaunchScreen.storyboard */,
 				4070547B29484CBE00FF5E86 /* Info.plist */,
@@ -73,6 +79,17 @@
 				4070547629484CBE00FF5E86 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		4070548229484D8700FF5E86 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4070547129484CB200FF5E86 /* ContentView.swift */,
+				4070548329484DF200FF5E86 /* EQView.swift */,
+				407054852948585100FF5E86 /* CompView.swift */,
+				407054872948586600FF5E86 /* BusCompView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -147,7 +164,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				4070546E29484CB200FF5E86 /* AppDelegate.swift in Sources */,
+				4070548429484DF200FF5E86 /* EQView.swift in Sources */,
 				4070547029484CB200FF5E86 /* SceneDelegate.swift in Sources */,
+				407054862948585100FF5E86 /* CompView.swift in Sources */,
+				407054882948586600FF5E86 /* BusCompView.swift in Sources */,
 				4070547229484CB200FF5E86 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

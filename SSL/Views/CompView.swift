@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  CompView.swift
 //  SSL
 //
 //  Created by Kocha on 12.12.2022.
@@ -8,14 +8,15 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct CompView: View {
     var body: some View {
-        Text("Hello, World!")
+        Text("This Compressor View")
+            .foregroundColor(.blue)
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct CompView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        CompView()
     }
 }
