@@ -24,7 +24,7 @@ struct ContentView: View {
             
             EQView()
                 .tabItem {
-                    Image(systemName: "house")
+                    Image(systemName: "equal")
                     Text("EQ")
             }
             .tag(1)
@@ -45,7 +45,7 @@ struct ContentView: View {
         //.edgesIgnoringSafeArea(.top) // - маленькая таб панель
          
        
-        
+       
     
     }
 }
