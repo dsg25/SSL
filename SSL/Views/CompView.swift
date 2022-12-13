@@ -9,23 +9,38 @@
 import SwiftUI
 
 struct CompView: View {
+    
+    @State private var eq = 0
+    
     var body: some View {
         
         VStack {
             Text("This Compressor View")
                 .foregroundColor(.blue)
                 .padding(40)
-            
-            Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/) {
-                Text(/*@START_MENU_TOKEN@*/"Button"/*@END_MENU_TOKEN@*/)
-                    .padding(20)
-            }
-            
-            
+//
+//            Button(action: {
+//
+//                butPress()
+//
+//            }) {
+//                Text(/*@START_MENU_TOKEN@*/"Button"/*@END_MENU_TOKEN@*/)
+//                    .padding(20)
+//            }
+//            Text("\(self.eq)")
+//
             
         }   .padding(40)
             .background(Color.gray)
             .edgesIgnoringSafeArea(.all)
+        
+        
+    
+    }
+    
+    func butPress() {
+            eq += 1
+        
     }
     
 }
@@ -38,5 +53,4 @@ struct CompView_Previews: PreviewProvider {
     }
 }
 
-func butPress() {
-print("DELETINGG....") }
+

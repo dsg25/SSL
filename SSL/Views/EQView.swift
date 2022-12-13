@@ -9,6 +9,9 @@
 import SwiftUI
 
 struct EQView: View {
+    
+    @State var eqLed1 = false
+    
     var body: some View {
         ZStack {
             Image("BG_EQ")
@@ -32,32 +35,45 @@ struct EQView: View {
                     Image("Encoder_Red")
                        .offset(x:45, y:50)
                         
-                    Button(action: {buttonEq_1()})
-                       {
-                           Image("Knob_Small")
-                           .renderingMode(.original)
-                           .scaleEffect(0.8)
-                            .offset(x:-10, y:-28)
+                    Button(action: {
+                            self.eqLed1.toggle()
+                        })
+                    {
+                    Image("Knob_Small")
+                        .renderingMode(.original)
+                        .scaleEffect(0.8)
+                        .offset(x:-10, y:-28)
+                        
                        }
-                   
+// Индикация кнопки + MIDI - Start
                 ZStack {
                     Image(systemName: "circle")
                         .renderingMode(.original)
                         .scaleEffect(0.8)
-                       } .offset(x:-10, y:-27) // Индикация кнопки 1
+                    Image(systemName: "circle.fill")
+                    // .renderingMode(.original)
+                     .scaleEffect(0.7)
+                        .foregroundColor(Color.black.opacity(0.3))
                     
+                if eqLed1 == true {
+                    Image(systemName: "circle.fill")
+                        .scaleEffect(0.7)
+                        .foregroundColor(.yellow)
+                        .blur(radius: 5) // Эффект Glow
+                    Image(systemName: "circle.fill")
+                        .scaleEffect(0.7)
+                        .foregroundColor(.yellow)
                     
-                }    .offset(x:0, y:0)              // Офсет Краного блока
-                
-                
+                    // ADD MIDI COMANDS
                     
-        }               .offset(x:-42, y:-205) // Офсет всего вертикального стека
+                    }
+                        } .offset(x:-10, y:-27) // Офсет индикации кнопки 1
+// Индикация кнопки + MIDI - End
                 
-                
-                
-            
-            
-        }
+                }    .offset(x:0, y:0)      // Офсет Краного блока
+                    
+                }    .offset(x:-42, y:-205) // Офсет всего вертикального                               стека
+            }
         .background(Color.black)
         .edgesIgnoringSafeArea(.top)
     }
@@ -65,14 +81,12 @@ struct EQView: View {
     
 }
 
-func buttonEq_1() {
-    print("Button PRESSED")
+
+   
     
-    //  Image(systemName: "circle.fill")
-       // .scaleEffect(0.7)
-        //    .foregroundColor(.yellow) dfd
+      
         
-}
+
 
 struct EQ_Previews: PreviewProvider {
     static var previews: some View {
